@@ -1,0 +1,30 @@
+.container{
+    height: 450px;
+    width: 90%;
+    overflow: auto;
+    margin-top: 40px;
+}
+
+.table{
+    border-collapse: collapse;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table thead tr {
+    background-color: #000;
+    color: #fff;
+}
+
+.table thead th input {
+    width: 100%;
+    outline: none;
+    margin-top: 10px;
+}
+.table td, .table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+  
+.table tr:nth-child(even){background-color: #f2f2f2;}
+

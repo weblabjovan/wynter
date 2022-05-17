@@ -43,6 +43,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  text-align: center;
 }
 
 .title,
@@ -71,6 +72,13 @@
   justify-content: center;
   flex-wrap: wrap;
   max-width: 800px;
+}
+
+.error{
+  padding: 10px 20px;
+  background: #f6c2c2;
+  margin-top: 20px;
+  color: #d02323;
 }
 
 .card {
