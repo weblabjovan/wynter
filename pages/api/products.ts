@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import fs from 'fs'
+import path from "path";
 import { parse } from 'csv-parse'
 
 
@@ -7,7 +8,8 @@ export default function getProducts(
   req: NextApiRequest,
   res: NextApiResponse<any>
 ) { 
-  fs.readFile('./data/products.csv', 'utf8', (err, data) => {
+  const dataPath = path.join(process.cwd(), 'data/products.csv');
+  fs.readFile(dataPath, 'utf8', (err, data) => {
     if (err) {
       console.error(err);
       return;
