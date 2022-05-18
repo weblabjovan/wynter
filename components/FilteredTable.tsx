@@ -1,4 +1,4 @@
-import { useTable, useFilters } from "react-table";
+import { useTable, useFilters, usePagination } from "react-table";
 import Filters from "./Filters";
 import Table from "./Table";
 
@@ -23,7 +23,8 @@ const FilteredTable = ({
         ],
       },
     },
-    useFilters
+    useFilters,
+    usePagination
   );
   // @ts-ignore
   const { setFilter } = tableInstance;
